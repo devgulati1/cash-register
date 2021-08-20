@@ -1,0 +1,19 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AE00FB;
+}
+button{
+    margin:20px;
+}
+.cash-register-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table{
+    border: 2px solid black;
+}
+.noOfNotes{
+    border-bottom: 2px solid black;
+}

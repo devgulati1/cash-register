@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cash.css">
+    <title>Cash Register Manager</title>
+</head>
+<body>
+    <div class="cash-register-div">
+        <h1>Cash Register Manager</h1>
+        <p></p>
+        <label>Bill Amount</label>
+        <input  class="bill" type="number"placeholder="enter the bill amount">
+        <label>Cash Given</label>
+        <input  class="cash-given" type="number"placeholder="enter the cash given">
+        <button>Check</button>
+        <h2 id="message"></h2>
+        <table class="table">
+            <caption>Return</caption>
+            <tr>
+                <th>No of notes</th>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <script src="cash.js"></script>
+</body>
+</html>
