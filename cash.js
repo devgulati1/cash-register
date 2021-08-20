@@ -5,7 +5,7 @@ let message=document.querySelector("#message");
 let notes=document.querySelectorAll(".noOfNotes");
 
 
-let arr=[2000,500,100,50,20,1];
+let arr=[2000,500,100,20,10,5,1];
 
 let checkValidity=()=>{
     message.style.display="none";
@@ -15,6 +15,7 @@ let checkValidity=()=>{
         
         if(cashGivenVal>=billVal){
             let changeAmount=cashGivenVal-billVal;
+           
              calculateChange(changeAmount);
         }else{
             console.log("cash given small")
@@ -32,9 +33,10 @@ let checkValidity=()=>{
 
 let calculateChange=(amount)=>{
   for(let i=0;i<arr.length;i++){
-      const noOfNotes=Math.trunc(amount/arr[i]);
+      const notesNo=Math.trunc(amount/arr[i]);
       amount=amount%arr[i];
-      notes[i].innerText=noOfNotes;
+      
+      notes[i].innerText=notesNo;
   }
 }
 button.addEventListener("click",checkValidity)
